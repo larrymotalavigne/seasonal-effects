@@ -21,12 +21,9 @@ Production-ready Angular library for adding seasonal and holiday-based visual ef
 
 See the effects in action:
 
-https://github.com/user-attachments/assets/your-demo-video.mp4
+https://github.com/larrymotalavigne/seasonal-effects/raw/main/assets/demo.mp4
 
-> **Note**: Replace the above URL with your actual demo video. You can:
-> - Upload a video/GIF to your repository's `assets/` folder
-> - Host on GitHub by dragging a video into an issue/PR and copying the URL
-> - Link to an external demo site (e.g., StackBlitz, CodeSandbox)
+[![Watch Demo Video](./assets/demo.mp4)](./assets/demo.mp4)
 
 ### Quick Preview
 
