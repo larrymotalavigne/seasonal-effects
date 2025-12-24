@@ -17,6 +17,43 @@ Production-ready Angular library for adding seasonal and holiday-based visual ef
 - 🎛️ **Configurable** - Multiple intensity levels and customization options
 - 🔧 **Extensible** - Easy to add custom effects and holidays
 
+## 🎥 Demo
+
+See the effects in action:
+
+https://github.com/user-attachments/assets/your-demo-video.mp4
+
+> **Note**: Replace the above URL with your actual demo video. You can:
+> - Upload a video/GIF to your repository's `assets/` folder
+> - Host on GitHub by dragging a video into an issue/PR and copying the URL
+> - Link to an external demo site (e.g., StackBlitz, CodeSandbox)
+
+### Quick Preview
+
+| Effect | Preview |
+|--------|---------|
+| **Snow** | ![Snow Effect](./assets/snow-preview.gif) |
+| **Fireworks** | ![Fireworks Effect](./assets/fireworks-preview.gif) |
+| **Petals** | ![Petals Effect](./assets/petals-preview.gif) |
+| **Confetti** | ![Confetti Effect](./assets/confetti-preview.gif) |
+| **Leaves** | ![Leaves Effect](./assets/leaves-preview.gif) |
+
+> **Tip**: To create preview GIFs, use tools like:
+> - [ScreenToGif](https://www.screentogif.com/) (Windows)
+> - [Kap](https://getkap.co/) (macOS)
+> - [Peek](https://github.com/phw/peek) (Linux)
+> - Or record with OBS and convert with [FFmpeg](https://ffmpeg.org/)
+
+### Live Demo
+
+Try it yourself: [Live Demo on StackBlitz](https://stackblitz.com/edit/seasonal-effects-angular-demo)
+
+> **Creating a Live Demo**:
+> 1. Build the library: `npm run build`
+> 2. Create a StackBlitz project with the example code
+> 3. Import from the built distribution
+> 4. Share the StackBlitz link here
+
 ## 🎯 Supported Angular Versions
 
 - Angular 16.x
