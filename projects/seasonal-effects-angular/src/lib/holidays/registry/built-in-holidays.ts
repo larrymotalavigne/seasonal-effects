@@ -49,6 +49,143 @@ export const BUILT_IN_HOLIDAYS: Holiday[] = [
     countries: ['FR'],
     priority: 90,
   },
+  {
+    name: 'Épiphanie (Galette des Rois)',
+    rule: { type: 'fixed', month: 1, day: 6 },
+    effect: 'confetti',
+    countries: ['FR'],
+    priority: 75,
+  },
+  {
+    name: 'Fête du Travail (Labour Day)',
+    rule: { type: 'fixed', month: 5, day: 1 },
+    effect: 'petals', // Lily of the valley tradition
+    countries: ['FR'],
+    priority: 80,
+  },
+  {
+    name: 'Victoire 1945 (Victory in Europe Day)',
+    rule: { type: 'fixed', month: 5, day: 8 },
+    effect: 'fireworks',
+    countries: ['FR'],
+    priority: 85,
+  },
+  {
+    name: 'Fête de la Musique',
+    rule: { type: 'fixed', month: 6, day: 21 },
+    effect: 'confetti',
+    countries: ['FR'],
+    priority: 80,
+  },
+  {
+    name: 'Assomption (Assumption of Mary)',
+    rule: { type: 'fixed', month: 8, day: 15 },
+    effect: 'petals',
+    countries: ['FR'],
+    priority: 75,
+  },
+  {
+    name: 'Toussaint (All Saints Day)',
+    rule: { type: 'fixed', month: 11, day: 1 },
+    effect: 'leaves',
+    countries: ['FR'],
+    priority: 70,
+  },
+  {
+    name: 'Armistice 1918',
+    rule: { type: 'fixed', month: 11, day: 11 },
+    effect: 'leaves',
+    countries: ['FR'],
+    priority: 80,
+  },
+
+  // Netherlands
+  {
+    name: 'Tulip Season',
+    rule: { type: 'range', startMonth: 4, startDay: 1, endMonth: 5, endDay: 10 },
+    effect: 'petals',
+    countries: ['NL'],
+    priority: 75,
+  },
+  {
+    name: 'Koningsdag Eve (King\'s Night)',
+    rule: { type: 'fixed', month: 4, day: 26 },
+    effect: 'confetti',
+    countries: ['NL'],
+    priority: 85,
+  },
+  {
+    name: 'Koningsdag (King\'s Day)',
+    rule: { type: 'fixed', month: 4, day: 27 },
+    effect: 'fireworks',
+    countries: ['NL'],
+    priority: 95,
+  },
+  {
+    name: 'Dodenherdenking (Remembrance Day)',
+    rule: { type: 'fixed', month: 5, day: 4 },
+    effect: 'none',
+    countries: ['NL'],
+    priority: 90,
+  },
+  {
+    name: 'Bevrijdingsdag (Liberation Day)',
+    rule: { type: 'fixed', month: 5, day: 5 },
+    effect: 'fireworks',
+    countries: ['NL'],
+    priority: 90,
+  },
+  {
+    name: 'Prinsjesdag (Prince\'s Day)',
+    rule: { type: 'relative', month: 9, weekday: 2, occurrence: 3 }, // 3rd Tuesday of September
+    effect: 'confetti',
+    countries: ['NL'],
+    priority: 75,
+  },
+  {
+    name: 'Sinterklaas Arrival',
+    rule: { type: 'range', startMonth: 11, startDay: 12, endMonth: 11, endDay: 17 },
+    effect: 'confetti',
+    countries: ['NL'],
+    priority: 80,
+  },
+  {
+    name: 'Sinterklaasavond (St. Nicholas Eve)',
+    rule: { type: 'fixed', month: 12, day: 5 },
+    effect: 'snow',
+    countries: ['NL'],
+    priority: 85,
+  },
+
+  // Belgium
+  {
+    name: 'Fête du Travail / Dag van de Arbeid (Labour Day)',
+    rule: { type: 'fixed', month: 5, day: 1 },
+    effect: 'petals',
+    countries: ['BE'],
+    priority: 80,
+  },
+  {
+    name: 'Belgian National Day',
+    rule: { type: 'fixed', month: 7, day: 21 },
+    effect: 'fireworks',
+    countries: ['BE'],
+    priority: 90,
+  },
+  {
+    name: 'Armistice Day',
+    rule: { type: 'fixed', month: 11, day: 11 },
+    effect: 'leaves',
+    countries: ['BE'],
+    priority: 80,
+  },
+  {
+    name: 'Sinterklaas / Saint-Nicolas',
+    rule: { type: 'fixed', month: 12, day: 6 },
+    effect: 'confetti',
+    countries: ['BE'],
+    priority: 80,
+  },
 
   // Japan
   {

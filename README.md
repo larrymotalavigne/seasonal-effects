@@ -138,6 +138,45 @@ Apply effects to specific elements:
 
 Available effects: `snow`, `fireworks`, `petals`, `confetti`, `leaves`
 
+### Regional Examples
+
+#### For French websites
+
+```typescript
+// main.ts
+provideSeasonalEffects({
+  country: 'FR',
+  enableHolidays: true,
+  enableSeasons: true,
+  intensity: 'medium',
+})
+```
+
+This will automatically show:
+- Fireworks on Bastille Day (July 14)
+- Petals on May 1st (lily of the valley tradition)
+- Confetti during Fête de la Musique (June 21)
+- And all other French holidays!
+
+#### For Dutch websites
+
+```typescript
+// main.ts
+provideSeasonalEffects({
+  country: 'NL',
+  enableHolidays: true,
+  enableSeasons: true,
+  intensity: 'high', // King's Day deserves it!
+})
+```
+
+This will automatically show:
+- Fireworks on Koningsdag (April 27) - the biggest celebration!
+- Petals during tulip season (April-May)
+- Confetti on Koningsdag Eve (April 26)
+- Snow for Sinterklaas (December 5)
+- And all other Dutch holidays!
+
 ## ⚙️ Configuration
 
 ### Complete Configuration Example
@@ -183,18 +222,67 @@ The library includes metadata for 40+ countries with hemisphere information.
 
 ### Built-in Holidays
 
-The library includes 30+ holidays across different countries:
+The library includes 50+ holidays across different countries with extensive support for French and Dutch regions:
 
+#### Global Holidays
+| Holiday | Date | Effect |
+|---------|------|--------|
+| New Year's Day | Jan 1 | Fireworks |
+| New Year's Eve | Dec 31 | Fireworks |
+| Easter Sunday | Easter | Petals |
+| Christmas Season | Dec 20-26 | Snow |
+
+#### France (FR)
+| Holiday | Date | Effect |
+|---------|------|--------|
+| Épiphanie (Galette des Rois) | Jan 6 | Confetti |
+| Fête du Travail (Labour Day) | May 1 | Petals |
+| Victoire 1945 (VE Day) | May 8 | Fireworks |
+| Fête de la Musique | Jun 21 | Confetti |
+| Bastille Day | Jul 14 | Fireworks |
+| Assomption (Assumption) | Aug 15 | Petals |
+| Toussaint (All Saints Day) | Nov 1 | Leaves |
+| Armistice 1918 | Nov 11 | Leaves |
+
+#### Netherlands (NL)
+| Holiday | Date | Effect |
+|---------|------|--------|
+| Tulip Season | Apr 1 - May 10 | Petals |
+| Koningsdag Eve (King's Night) | Apr 26 | Confetti |
+| Koningsdag (King's Day) | Apr 27 | Fireworks |
+| Dodenherdenking (Remembrance) | May 4 | None |
+| Bevrijdingsdag (Liberation Day) | May 5 | Fireworks |
+| Prinsjesdag (Prince's Day) | 3rd Tue Sep | Confetti |
+| Sinterklaas Arrival | Nov 12-17 | Confetti |
+| Sinterklaasavond (St. Nicholas) | Dec 5 | Snow |
+
+#### Belgium (BE)
+| Holiday | Date | Effect |
+|---------|------|--------|
+| Fête du Travail / Dag van de Arbeid | May 1 | Petals |
+| Belgian National Day | Jul 21 | Fireworks |
+| Armistice Day | Nov 11 | Leaves |
+| Sinterklaas / Saint-Nicolas | Dec 6 | Confetti |
+
+#### Other Countries
 | Country | Holiday | Date | Effect |
 |---------|---------|------|--------|
-| Global | New Year's Day | Jan 1 | Fireworks |
-| Global | Christmas | Dec 20-26 | Snow |
 | US | Independence Day | Jul 4 | Fireworks |
 | US | Thanksgiving | 4th Thu Nov | Leaves |
-| FR | Bastille Day | Jul 14 | Fireworks |
-| JP | Hanami | Mar 20 - Apr 15 | Petals |
-| DE | Oktoberfest | Sep 15 - Oct 5 | Leaves |
+| US | Halloween | Oct 31 | Leaves |
+| JP | Hanami (Cherry Blossom) | Mar 20 - Apr 15 | Petals |
+| JP | Golden Week | Apr 29 - May 5 | Confetti |
+| DE | Oktoberfest Period | Sep 15 - Oct 5 | Leaves |
+| DE | German Unity Day | Oct 3 | Confetti |
 | BR | Carnival | Easter -47 days | Confetti |
+| BR | Independence Day | Sep 7 | Fireworks |
+| MX | Día de los Muertos | Nov 1-2 | Petals |
+| MX | Independence Day | Sep 16 | Fireworks |
+| CA | Canada Day | Jul 1 | Fireworks |
+| AU | Australia Day | Jan 26 | Fireworks |
+| IN | Holi (approximate) | Mar 1-15 | Confetti |
+| IN | Independence Day | Aug 15 | Fireworks |
+| CN | National Day | Oct 1 | Fireworks |
 
 See [full documentation](./projects/seasonal-effects-angular/README.md) for complete API reference and advanced usage.
 
